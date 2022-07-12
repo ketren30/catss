@@ -6,7 +6,7 @@
     "weight": "3-6 кг", 
     "fur": "короткошерстная", 
     "color": "соррель, дикий («кроличий»), фавн и голубой", 
-    "picture":"https://github.com/ketren30/cats/blob/main/abissinskaya-koshka.jpg?raw=true",
+    "picture":"https://raw.githubusercontent.com/ketren30/catss/main/abissinskaya-koshka.jpg",
     "isliked" :false,
     "isdeleted" :false
 },
@@ -18,7 +18,7 @@
     "weight": "3-5 кг", 
     "fur": "короткошерстная", 
     "color": "шоколадный, лиловый, карамелевый, циннамон, персиковый, фавн",
-    "picture":"https://github.com/ketren30/cats/blob/main/avstraliyskaya-dymchataya.jpg?raw=true",
+    "picture":"https://raw.githubusercontent.com/ketren30/catss/main/avstraliyskaya-dymchataya.jpg",
     "isliked": false,
     "isdeleted": false
 },
@@ -30,7 +30,7 @@
     "weight": "5-8 кг", 
     "fur": "короткошерстная", 
     "color": "табби с пятнистым, тигровым или тиккитированным рисунком",
-    "picture":"https://github.com/ketren30/cats/blob/main/aziatskaya-tabbi.jpg?raw=true",
+    "picture":"https://raw.githubusercontent.com/ketren30/catss/main/aziatskaya-tabbi.jpg",
     "isliked":false,
     "isdeleted":false
 },
@@ -42,7 +42,7 @@
     "weight": "4-8 кг", 
     "fur": "длинношерстная", 
     "color":"любые окрасы кроме пойнтовых и тикированнх",
-    "picture":"https://github.com/ketren30/cats/blob/main/amerikanskaya-dlinnosherstnaya-koshka.jpg?raw=true",
+    "picture":"https://raw.githubusercontent.com/ketren30/catss/main/amerikanskaya-dlinnosherstnaya-koshka.jpg",
     "isliked":false,
     "isdeleted":false
 },
@@ -54,7 +54,7 @@
     "weight": "3,5-7 кг", 
     "fur": "короткошерстная", 
     "color":"черный, красный, белый, голубой, кремовый, шиншилла, камея",
-    "picture":"https://github.com/ketren30/cats/blob/main/amerikanskaya-zhestkosherstnaya.jpg?raw=true",
+    "picture":"https://raw.githubusercontent.com/ketren30/catss/main/amerikanskaya-zhestkosherstnaya.jpg",
     "isliked": false,
     "isdeleted":false
 }]

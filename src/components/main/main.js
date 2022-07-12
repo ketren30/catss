@@ -10,7 +10,7 @@ export const Main = (prop) => {
     useEffect(()=> {
       let mounted = true;
 
-      fetch("https://raw.githubusercontent.com/ketren30/cats/main/cats.json")
+      fetch("https://raw.githubusercontent.com/ketren30/catss/main/cats.json")
       .then((res) => {console.log(res); return res.json().then((result)=> {if (mounted) setCats(result)})})
       .catch((err) => {
         if (err.name === "AbortError") {
