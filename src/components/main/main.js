@@ -7,10 +7,10 @@ export const Main = (prop) => {
     const [error, setError] = useState(null);
     const [filtr, setFiltr]=React.useState('1');
     
-    useEffect(()=> {
+    /* useEffect(()=> {
       let mounted = true;
 
-      fetch("https://raw.githubusercontent.com/ketren30/cats/main/cats.json")
+      //fetch("https://raw.githubusercontent.com/ketren30/cats/main/cats.json")
       .then((res) => {console.log(res); return res.json().then((result)=> {if (mounted) setCats(result)})})
       .catch((err) => {
         if (err.name === "AbortError") {
@@ -22,7 +22,7 @@ export const Main = (prop) => {
       return function cleanup() {
         mounted = false;
     }
-    },[]); 
+    },[]);  */
 
    
   const SetElem=(obj)=> {
