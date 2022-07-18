@@ -2,7 +2,6 @@ import React, { useEffect, useState} from "react";
 import { useDispatch, useSelector } from 'react-redux'
 import './main.css';
 import { fetchData, changeFiltr } from '../../redux/actions'
-import { Loader } from '../loader';
 import { Cards } from "../cards"
 
 
@@ -18,7 +17,14 @@ export const Main = () => {
         dispatch(changeFiltr(event.target.value))
     }
 
-    if (loading) return <Loader /> 
+    if (loading) return (
+      <div>
+        <h3>
+          Загрузка...
+        </h3>
+      </div> 
+    )
+    
     else return (
       <div>
         <div className='wrapper'>

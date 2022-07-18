@@ -35,7 +35,7 @@ export function fetchData () {
             setTimeout(()=> {
                 dispatch({type: "fetchData", payload: json})
                 dispatch(hideLoader())
-            }, 500)
+            }, 1500)
         } catch (e) {
             dispatch(showAlert("Что-то пошло не так..."))
             dispatch(hideLoader())
@@ -70,14 +70,3 @@ export const changeDeleted = (breed) => {
     })
   }
 };
-
-
-/* const ChangeDeleted = (breed) => {
-  setCats(prevState =>
-    prevState.map(item =>
-      item.breed === breed
-      ? { ...item, isdeleted: true }
-      : item
-    )
-  )
-}; */

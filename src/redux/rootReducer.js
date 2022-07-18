@@ -1,6 +1,5 @@
 import {combineReducers} from 'redux'
 import { appReducer } from './appReducer'
-import { cardReducer } from './cardReducer'
 import { mainReducer } from './mainReducer'
 
 
