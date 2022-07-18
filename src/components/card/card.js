@@ -1,31 +1,35 @@
 import React from 'react';
-import like from "../like.jpg";
-import nolike from "../nolike.jpg";
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { changeLike, changeDeleted } from '../../redux/actions'
 import "./card.css";
 
 
-export const Card= (props) => {
-  const [isLike, setIsLike]=React.useState(false);
-  const [likeLink, setLikeLink]=React.useState(nolike);
+export const Card= ({cat}) => {
+  const like='https://raw.githubusercontent.com/ketren30/catss/main/src/components/like.jpg';
+  const nolike="https://raw.githubusercontent.com/ketren30/catss/main/src/components/nolike.jpg";
+  const [likeLink, setLikeLink]=useState(nolike);
+  const dispatch = useDispatch();
   
-  React.useEffect(()=> {
-    if (isLike) setLikeLink(like); 
+
+  const setLink = (liked) => {
+    if (liked) setLikeLink(like)
     else setLikeLink(nolike);
-  }, [isLike]
-  )
+    return likeLink
+  }
 
     return (
       <div className="cards">
-        <img src={props.link} className="img"></img>
-        Порода: {props.breed}<br/>
-        Страна происхождения: {props.country}<br/>
-        Продолжительность жизни: {props.longoflife}<br/>
-        Размер: {props.size}<br/>
-        Вес: {props.weight}<br/>
-        Шерсть: {props.fur}<br/>
-        Окрас: {props.color}<br/>
-        Лайк <img src={likeLink} width='25px' height='20px' onClick={()=>{setIsLike(!isLike); props.onChangeLike(props.breed)}} ></img>
-        <button onClick={()=>props.onChangeDeleted(props.breed)}>Удалить породу</button>
+        <img src={cat.link} className="img"></img>
+        Порода: {cat.breed}<br/>
+        Страна происхождения: {cat.country}<br/>
+        Продолжительность жизни: {cat.longoflife}<br/>
+        Размер: {cat.size}<br/>
+        Вес: {cat.weight}<br/>
+        Шерсть: {cat.fur}<br/>
+        Окрас: {cat.color}<br/>
+        Лайк  <img src={setLink(cat.isliked)} width='25px' height='20px' onClick={dispatch(changeLike(cat.breed))} /> 
+        <button onClick={dispatch(changeDeleted(cat.breed))}>Удалить породу</button>
       </div>
     )
 }
