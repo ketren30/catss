@@ -7,8 +7,8 @@
     "fur": "короткошерстная", 
     "color": "соррель, дикий («кроличий»), фавн и голубой", 
     "picture":"https://raw.githubusercontent.com/ketren30/catss/main/abissinskaya-koshka.jpg",
-    "isliked" :false,
-    "isdeleted" :false
+    "isliked" : false,
+    "isdeleted" : false
 },
 {
     "breed": "Австралийская дымчатая", 
@@ -31,8 +31,8 @@
     "fur": "короткошерстная", 
     "color": "табби с пятнистым, тигровым или тиккитированным рисунком",
     "picture":"https://raw.githubusercontent.com/ketren30/catss/main/aziatskaya-tabbi.jpg",
-    "isliked":false,
-    "isdeleted":false
+    "isliked": false,
+    "isdeleted": false
 },
 {
     "breed": "Американская длинношерстная", 
@@ -43,8 +43,8 @@
     "fur": "длинношерстная", 
     "color":"любые окрасы кроме пойнтовых и тикированнх",
     "picture":"https://raw.githubusercontent.com/ketren30/catss/main/amerikanskaya-dlinnosherstnaya-koshka.jpg",
-    "isliked":false,
-    "isdeleted":false
+    "isliked": false,
+    "isdeleted": false
 },
 {
     "breed": "Американская жесткошерстная", 
@@ -56,5 +56,5 @@
     "color":"черный, красный, белый, голубой, кремовый, шиншилла, камея",
     "picture":"https://raw.githubusercontent.com/ketren30/catss/main/amerikanskaya-zhestkosherstnaya.jpg",
     "isliked": false,
-    "isdeleted":false
+    "isdeleted": false
 }]
